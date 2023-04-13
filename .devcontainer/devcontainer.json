@@ -6,21 +6,22 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
   "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "npm start"
-  },
+  // "postAttachCommand": {
+  //   "server": "npm start"
+  // },
   "customizations": {
     "codespaces": {
       "openFiles": [
         "index.js"
       ]
     }
-  },
-  "portsAttributes": {
-    "3000": {
-      "label": "Application",
-      "onAutoForward": "openPreview"
-    }
-  },
-  "forwardPorts": [3000]
+  }
+  // ,
+  // "portsAttributes": {
+  //   "3000": {
+  //     "label": "Application",
+  //     "onAutoForward": "openPreview"
+  //   }
+  // },
+  // "forwardPorts": [3000]
 }
