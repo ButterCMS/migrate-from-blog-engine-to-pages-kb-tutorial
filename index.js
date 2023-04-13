@@ -1,9 +1,10 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const getAllBlogPosts = require("./modules/getAllBlogPosts");
-const getAllCustomBlogPages = require("./modules/getAllCustomBlogPages");
-const createCollections = require("./modules/createCollections");
-const { migrateBlogPosts, generateBlogPosts } = require("./lib/api");
+const getAllBlogPosts = require("./controllers/getAllBlogPosts");
+const getAllCustomBlogPages = require("./controllers/getAllCustomBlogPages");
+const createBlogCollections = require("./controllers/createBlogCollections");
+const generateBlogPages = require("./controllers/generateBlogPages");
+const migrateBlogPages = require("./controllers/migrateBlogPages");
 
 const app = express();
 dotenv.config();
@@ -17,85 +18,15 @@ app.get("/", (req, res) => {
   res.json("Hi! to migrate blog posts, please use /migrateBlogPosts");
 });
 
-app.get("/getAllBlogPosts", async (req, res) => {
-  const posts = await getAllBlogPosts();
-  console.log({
-    posts,
-  });
+app.get("/getAllBlogPosts", getAllBlogPosts);
 
-  res.status(200).json(posts);
-});
+app.get("/getAllBlogPages", getAllCustomBlogPages);
 
-app.get("/getAllCustomBlogPages", async (req, res) => {
-  const pages = await getAllCustomBlogPages();
-  console.log({
-    pages,
-  });
+app.post("/createCollections", createBlogCollections);
 
-  res.status(200).json(pages);
-});
+app.post("/generateBlogPages", generateBlogPages);
 
-app.post("/createCollections", async (req, res) => {
-  try {
-    const { collections } = req.body;
-
-    const createdCollections = await createCollections(collections);
-
-    res.status(200).json(createdCollections);
-  } catch (error) {
-    console.log({
-      error,
-    });
-
-    res.status(500).json({ error: error.message });
-  }
-});
-
-app.post("/generateBlogPosts", async (req, res) => {
-  try {
-    const blogPosts = req.body;
-
-    const generatedBlogPosts = await generateBlogPosts(blogPosts);
-
-    console.log({
-      generatedBlogPosts,
-    });
-
-    if (generatedBlogPosts.error) {
-      throw new Error(generatedBlogPosts.error);
-    }
-
-    res.status(200).json(generatedBlogPosts);
-  } catch (error) {
-    console.log({
-      error,
-    });
-
-    res.status(500).json({ error: error.message });
-  }
-});
-
-app.post("/migrateBlogPosts", async (req, res) => {
-  try {
-    const migratedBlogPosts = await migrateBlogPosts();
-
-    console.log({
-      migratedBlogPosts,
-    });
-
-    if (migratedBlogPosts.error) {
-      throw new Error(migratedBlogPosts.error);
-    }
-
-    res.status(200).json(migratedBlogPosts);
-  } catch (error) {
-    console.log({
-      error,
-    });
-
-    res.status(500).json({ error: error.message });
-  }
-});
+app.post("/migrateBlogPosts", migrateBlogPages);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

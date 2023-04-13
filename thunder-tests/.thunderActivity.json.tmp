@@ -129,5 +129,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "aec1998d-3572-4ff9-9712-76773d73cda7",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:4000/createCollections",
+    "url": "http://localhost:4000/createCollections",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-13T13:35:41.802Z",
+    "modified": "2023-04-13T13:35:41.802Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "[\n  {\n    \"data\": [\n      {\n        \"name\": \"mouse\",\n        \"slug\": \"mouse\"\n      }\n    ],\n    \"type\": \"tag\"\n  }\n]",
+      "form": []
+    },
+    "tests": []
   }
 ]
