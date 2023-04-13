@@ -1,17 +1,20 @@
 const express = require("express");
-const app = express();
+const dotenv = require("dotenv");
 const getAllBlogPosts = require("./modules/getAllBlogPosts");
 const getAllCustomBlogPages = require("./modules/getAllCustomBlogPages");
 const createCollections = require("./modules/createCollections");
-const { migrateBlogPosts } = require("./lib/api");
+const { migrateBlogPosts, generateBlogPosts } = require("./lib/api");
 
-const port = 4000;
+const app = express();
+dotenv.config();
+
+const port = process.env.PORT || 4000;
 
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.get("/", (req, res) => {
-  res.json("Hello World!");
+  res.json("Hi! to migrate blog posts, please use /migrateBlogPosts");
 });
 
 app.get("/getAllBlogPosts", async (req, res) => {
@@ -48,13 +51,33 @@ app.post("/createCollections", async (req, res) => {
   }
 });
 
-// app.post("/createBlogPost");
-
-app.post("/migrateBlogPosts", async (req, res) => {
+app.post("/generateBlogPosts", async (req, res) => {
   try {
     const blogPosts = req.body;
 
-    const migratedBlogPosts = await migrateBlogPosts(blogPosts);
+    const generatedBlogPosts = await generateBlogPosts(blogPosts);
+
+    console.log({
+      generatedBlogPosts,
+    });
+
+    if (generatedBlogPosts.error) {
+      throw new Error(generatedBlogPosts.error);
+    }
+
+    res.status(200).json(generatedBlogPosts);
+  } catch (error) {
+    console.log({
+      error,
+    });
+
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post("/migrateBlogPosts", async (req, res) => {
+  try {
+    const migratedBlogPosts = await migrateBlogPosts();
 
     console.log({
       migratedBlogPosts,
