@@ -1,13 +1,9 @@
-# GitHub Codespaces ♥️ Express
+# ButterCMS Content Migration Implementation with Express.js
 
-Welcome to your shiny new Codespace running Express! We've got everything fired up and running for you to explore Express.
+This repository contains an Express app for migrating content into ButterCMS by getting the content from the ButterCMS Read API and creating new custom blog pages with ButterCMS Write API. 
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+This Express API can be used by cloning or downloading the repository and providing the Read and Write API key.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+With little tweaks and changes to the fields, you can refactor this script to migrate your own content into your content types on ButterCMS. 
 
-To run this application:
-
-```
-npm start
-```
+> Developed by [Miracle Onyenma](https://www.linkedin.com/in/miracleio/) for ButterCMS. 
