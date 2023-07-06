@@ -1,0 +1,198 @@
+[
+  {
+    "status": "created",
+    "message": "Blog page created: picking-the-best-smartphone",
+    "data": {
+      "slug": "picking-the-best-smartphone",
+      "name": "Picking the best smartphone",
+      "published": "2023-04-13T09:15:57.379169Z",
+      "updated": "2023-04-13T09:15:57.379169Z",
+      "page_type": "blog_page",
+      "fields": {
+        "blog_seo": {
+          "title": "Picking the best smartphone",
+          "description": "Pick one already",
+          "og_image": "https://cdn.buttercms.com/5IwAKyz0QBSY1fXhmnFL",
+          "og_image_alt": "Smartphone picking"
+        },
+        "title": "Picking the best smartphone",
+        "body": [
+          {
+            "type": "content_block",
+            "fields": {
+              "content": "<p>There are many ways to consider smartphones and which ones to pick.</p>"
+            }
+          }
+        ],
+        "author": {
+          "meta": {
+            "id": 468473
+          },
+          "name": "Miracle Onyenma",
+          "slug": "miracle-onyenma",
+          "description": ""
+        },
+        "categories": [
+          {
+            "meta": {
+              "id": 469020
+            },
+            "name": "Phones",
+            "slug": "phones"
+          }
+        ],
+        "tags": [
+          {
+            "meta": {
+              "id": 469021
+            },
+            "name": "Picking a device",
+            "slug": "picking-a-device"
+          },
+          {
+            "meta": {
+              "id": 469019
+            },
+            "name": "Shopping",
+            "slug": "shopping"
+          },
+          {
+            "meta": {
+              "id": 469022
+            },
+            "name": "Preferences",
+            "slug": "preferences"
+          }
+        ],
+        "summary": "Pick one already",
+        "publish_date": "2023-04-13T07:29:57.727000+00:00"
+      }
+    }
+  },
+  {
+    "status": "created",
+    "message": "Blog page created: another-example-blog-post",
+    "data": {
+      "slug": "another-example-blog-post",
+      "name": "Another example blog post",
+      "published": "2023-04-13T09:15:57.392657Z",
+      "updated": "2023-04-13T09:15:57.392657Z",
+      "page_type": "blog_page",
+      "fields": {
+        "blog_seo": {
+          "title": "Another example blog post",
+          "description": "The article is divided into three sections and provides information and inspiration for readers who are interested in technology, food, and ",
+          "og_image": "https://d2wzhk7xhrnk1x.cloudfront.net/f9Sen4QQcyVHSDZzI75w_butter-blog-post.jpg",
+          "og_image_alt": "another example image"
+        },
+        "title": "Another example blog post",
+        "body": [
+          {
+            "type": "content_block",
+            "fields": {
+              "content": "<h2>Introduction</h2>\n<p>Welcome to another example blog post! In this post, we'll be exploring a variety of topics, from the latest tech gadgets to the most interesting travel destinations. Whether you're looking for inspiration, entertainment, or just some good old-fashioned fun, we've got you covered.</p>\n<h2>Section 1: The Latest Tech Gadgets</h2>\n<p>If you're a tech enthusiast, you won't want to miss this section. We'll be taking a look at the newest smartphones, laptops, and other gadgets that are making waves in the tech world. From the iPhone 14 to the latest gaming laptops, we'll be covering it all.</p>\n<h2>Section 2: Delicious Recipes to Try</h2>\n<p>Are you a foodie? Then this section is for you. We've got some mouth-watering recipes that you simply have to try. From healthy salads to decadent desserts, there's something for everyone in this section.</p>"
+            }
+          }
+        ],
+        "author": {
+          "meta": {
+            "id": 468473
+          },
+          "name": "Miracle Onyenma",
+          "slug": "miracle-onyenma",
+          "description": ""
+        },
+        "categories": [
+          {
+            "meta": {
+              "id": 468471
+            },
+            "name": "example",
+            "slug": "example"
+          }
+        ],
+        "tags": [
+          {
+            "meta": {
+              "id": 468478
+            },
+            "name": "tech",
+            "slug": "tech"
+          },
+          {
+            "meta": {
+              "id": 468477
+            },
+            "name": "food",
+            "slug": "food"
+          }
+        ],
+        "summary": "The article is divided into three sections and provides information and inspiration for readers who are interested in technology, food, and travel. The article aims to be informative and entertaining, offering something for everyone who reads it.",
+        "publish_date": "2023-04-10T16:10:33.864000+00:00"
+      }
+    }
+  },
+  {
+    "status": "created",
+    "message": "Blog page created: example-post",
+    "data": {
+      "slug": "example-post",
+      "name": "Example Post",
+      "published": "2023-04-13T09:15:57.312695Z",
+      "updated": "2023-04-13T09:15:57.312695Z",
+      "page_type": "blog_page",
+      "fields": {
+        "blog_seo": {
+          "title": "Example Post SEO Optimized Title",
+          "description": "This is our example blog posts SEO optimized meta description.",
+          "og_image": "https://cdn.buttercms.com/0xJo37ovRe2sq5SEVxQD",
+          "og_image_alt": ""
+        },
+        "title": "Example Post",
+        "body": [
+          {
+            "type": "content_block",
+            "fields": {
+              "content": "<p>Welcome to ButterCMS! This an example blog post written using Butter.</p>\n<h3>Blog Engine Demo</h3>\n<p>Here's a helpful walkthrough of our Blog Engine solution.</p>\n<p>\n\n<!-- Outer Div sets maximum width for iframe on extra wide screens -->\n<div style=\"max-width:800px; height: auto; margin: auto;\">\n<!-- Inner div allows for responsive iframe scaling, including on mobile -->\n<div style=\"position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden; margin:auto;\">\n<iframe style=\"position: absolute; top:0; left: 0; width: 100%; height: 100%; z-index: 9999;\" src=\"https://www.youtube.com/embed/0dJbHy2XqoY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"allowfullscreen\"></iframe>\n</div>\n</div>\n<br /><a href=\"https://buttercms.com/demo/blog-engine-why-our-blog-engine/\">https://buttercms.com/demo/blog-engine-why-our-blog-engine/</a></p>\n<p></p>\n<h3>What's happening here?</h3>\n<p>If you're viewing this post from your website or command line, you've successfully made a request to&nbsp;the <a href=\"https://buttercms.com/docs/api\">Butter API</a>. If you haven't already, make sure you have our <a href=\"https://buttercms.com/docs/\">development guides</a> pulled up for step-by-step instructions on setting up Butter.</p>\n<h3>How does&nbsp;editing work?</h3>\n<p>Butter's WYSIWYG editor supports standard text formatting including headings, links, quotes, code, text alignment, and more. You can upload, crop, and resize images which are automatically hosted and delivered through a CDN (see below). You can also edit HTML directly when needed.</p>\n<figure class=\"image\"><img src=\"https://d2wzhk7xhrnk1x.cloudfront.net/rgPM9aHoSSKnjk44TQlD_butter-blog-post.jpg\" alt=\"Delivered to you via CDN\" />\n<figcaption>Delivered to you via CDN</figcaption>\n</figure>\n<h3>Can I use Butter as a full CMS for&nbsp;things other than a&nbsp;blog?</h3>\n<p>Yes. Butter can be used as a full CMS for managing dynamic content and creating pages across your entire website or app. Check out our <a href=\"https://buttercms.com/docs/\">development guides</a> for step-by-step tutorials on setting this up.</p>"
+            }
+          }
+        ],
+        "author": {
+          "meta": {
+            "id": 468473
+          },
+          "name": "Miracle Onyenma",
+          "slug": "miracle-onyenma",
+          "description": ""
+        },
+        "categories": [
+          {
+            "meta": {
+              "id": 468472
+            },
+            "name": "Example Category",
+            "slug": "example-category"
+          },
+          {
+            "meta": {
+              "id": 468474
+            },
+            "name": "io",
+            "slug": "io"
+          }
+        ],
+        "tags": [
+          {
+            "meta": {
+              "id": 468475
+            },
+            "name": "Example Tag",
+            "slug": "example-tag"
+          }
+        ],
+        "summary": "This is an example blog post. Pretty neat huh?",
+        "publish_date": "2022-01-29T13:49:00+00:00"
+      }
+    }
+  }
+]
